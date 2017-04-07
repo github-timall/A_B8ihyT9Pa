@@ -2,11 +2,11 @@
 
 use yii\db\Migration;
 
-class m170401_103830_zzr_referrer extends Migration
+class m170407_143329_zzr_url_query extends Migration
 {
     public function up()
     {
-        $this->createTable('zzr_referrer', [
+        $this->createTable('zzr_url_query', [
             'id' => $this->primaryKey(),
 
             'host' => $this->string(),
@@ -19,10 +19,10 @@ class m170401_103830_zzr_referrer extends Migration
 
     public function down()
     {
-        $this->dropTable('zzr_referrer');
-        echo "m170401_103830_zzr_referrer cannot be reverted.\n";
+        $this->dropTable('zzr_url_query');
+        echo "m170407_143329_zzr_url_query cannot be reverted.\n";
 
-        return true;
+        return false;
     }
 
     /*

@@ -11,7 +11,8 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'modules' => [
-        'v1' => 'api_app\modules\v1\Module'
+        'v1' => 'api_app\modules\v1\Module',
+        'gii' => 'yii\gii\Module',
     ],
     'components' => [
         'user' => [

@@ -10,16 +10,17 @@ class m170401_104120_zzr_visit extends Migration
             'id' => $this->primaryKey(),
 
             'parent_id' => $this->integer(),
-            'type' => $this->string(),
+            'type' => $this->smallInteger(),
 
             'unique_id' => $this->integer(),
             'device_id' => $this->integer(),
+            'url_query_id' => $this->integer(),
             'referrer_id' => $this->integer(),
 
-            'geo_code' => $this->string(),
-            'ip' => $this->string(),
-            'user_agent' => $this->string(),
-            'headers' => $this->string(),
+            'geo_code' => $this->string(16),
+            'ip' => $this->string(16),
+            'user_agent' => $this->text(),
+            'headers' => $this->text(),
 
             'created_at' => $this->dateTime(),
             'updated_at' => $this->dateTime(),
