@@ -19,6 +19,9 @@ class m170406_102742_zzr_user_info extends Migration
             'skype' => $this->string(),
             'language' => $this->string(16),
             'utm_source' => $this->string(),
+
+            'created_at' => $this->dateTime(),
+            'updated_at' => $this->dateTime(),
         ], $tableOptions);
     }
 

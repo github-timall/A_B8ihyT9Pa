@@ -18,6 +18,9 @@ class m170406_103850_zzr_affiliate extends Migration
 
             'name' => $this->string(),
             'team_id' => $this->integer(),
+
+            'created_at' => $this->dateTime(),
+            'updated_at' => $this->dateTime(),
         ], $tableOptions);
     }
 
