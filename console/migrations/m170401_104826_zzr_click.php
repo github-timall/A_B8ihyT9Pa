@@ -14,7 +14,6 @@ class m170401_104826_zzr_click extends Migration
             'method' => $this->smallInteger(),
             'page_type' => $this->string(),
             'page_id' => $this->integer(),
-            'ip' => $this->string(),
 
             'created_at' => $this->dateTime(),
             'updated_at' => $this->dateTime(),

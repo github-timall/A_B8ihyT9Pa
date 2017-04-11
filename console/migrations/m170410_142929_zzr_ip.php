@@ -9,6 +9,8 @@ class m170410_142929_zzr_ip extends Migration
         $this->createTable('zzr_ip', [
             'id' => $this->primaryKey(),
             'ip' => $this->string(16),
+            'geo_code' => $this->string(8),
+            'city' => $this->string(),
             'created_at' => $this->dateTime(),
             'updated_at' => $this->dateTime(),
         ]);
