@@ -12,7 +12,7 @@ class m170401_104826_zzr_click extends Migration
             'visit_id' => $this->integer(),
 
             'method' => $this->smallInteger(),
-            'page_type' => $this->string(),
+            'page_type' => $this->string(32),
             'page_id' => $this->integer(),
 
             'created_at' => $this->dateTime(),
